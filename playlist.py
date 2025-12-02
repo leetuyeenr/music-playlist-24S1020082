@@ -23,5 +23,19 @@ def main():
            break
         else:
           print("Lựa chọn không hợp lệ.")
+
+def add_song():
+    print("Vui lòng nhập tên bài hát: ")
+    title = input()
+    print("Vui lòng nhập tên ca sĩ: ")
+    artist = input()
+    print("nhập thời lượng: ")
+    duration = input()
+    songs.append({
+        "title": title,
+        "artist": artist,
+        "duration": duration
+    })
+
 if __name__ == "__main__":
     main()

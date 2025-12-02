@@ -1,4 +1,4 @@
-song=[
+songs=[
     {'title': 'Phía sau một cô gái', 'artist': 'Soobin Sầm Sơn', 'duration': 240},
     {'title': 'Vài lần đóng đua', 'artist': 'Soobin Sầm Sơn', 'duration': 240}
 
@@ -36,6 +36,10 @@ def add_song():
         "artist": artist,
         "duration": duration
     })
+    print("Đã thêm bài hát vào playlist")
+def view_playlist():
+    for i in range (len(songs)):
+        print()
 
 if __name__ == "__main__":
     main()

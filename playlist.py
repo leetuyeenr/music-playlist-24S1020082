@@ -39,7 +39,13 @@ def add_song():
     print("Đã thêm bài hát vào playlist")
 def view_playlist():
     for i in range (len(songs)):
-        print()
+         print ("1.",songs[i]["Title"],"- Nghệ sĩ -",songs[i]["artist"],"(",songs[i]["duration"],"s)")
+def search_by_artist():
+    print("Nhập tên ca sĩ:")
+    artist=input()
+    for i in range (len(songs)):
+        if songs[i]["artist"]==artist:
+            print (songs[i])
 
 if __name__ == "__main__":
     main()
